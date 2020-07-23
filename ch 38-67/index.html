@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JAVASCRIPT</h1>
+    <div class='img-box'>
+        <h1>Beautiful Places</h1>
+        <img onclick="view(this)"src="img/pic1.jpg" alt="">
+        <img onclick="view(this)" src="img/pic2.png" alt="">
+        <img onclick="view(this)" src="img/pic3.jpg" alt="">
+        <img onclick="view(this)" src="img/pic4.jpg" alt="">
+    </div>
+
+    <div id='disply-img'>
+        <span>X</span>
+        <img alt="">
+    </div>
+    <div class="main-div">
+        <h1>Mobile Phone lookup</h1>
+        <div class='mob'>
+            <img src="https://www.whatmobile.com.pk/admin/images/Vivo/VivoY30128GB-b.jpg" alt="" onclick="showMsg('Vivo Y30')">
+            <h4 onclick="showMsg('Vivo Y30')">Vivo Y30</h4>
+        </div>
+        <div class='mob'>
+            <img src="https://www.whatmobile.com.pk/admin/images/Realme/Realme68GB-b.jpg" onclick="showMsg('Realme 6')" alt="">
+            <h4 onclick="showMsg('Realme 6')">Realme 6</h4>
+        </div>
+        <div class='mob'>
+            <img  src="https://www.whatmobile.com.pk/admin/images/Samsung/SamsungGalaxyA11-b.jpg" onclick="showMsg('Samsung Galaxy A11')" alt="">
+            <h4 onclick="showMsg('Samsung Galaxy A11')">Samsung Galaxy A11</h4>
+        </div>
+        <div class='mob'>
+            <img src="https://www.whatmobile.com.pk/admin/images/Oppo/OppoA313GB-b.jpg" onclick="showMsg('Oppo A31')" alt="">
+            <h4 onclick="showMsg('Oppo A31')">Oppo A31</h4>
+        </div>
+    </div>
+
+    <div>
+        <img id='imgs' onmouseout="outImg()" onmouseover="overImg()" src="img/sarfraz.jpg" alt="">
+    </div>
+
+
+    <div class='counter'>
+        <button onclick="subVal()" id=minus>-</button>
+        <input type="text" id='num' value=0 disabled>
+        <button onclick="addVal()" id=plus>+</button>
+    </div>
+
+    <form action="#" onsubmit="showData()">
+        <div class="signup">
+            <h1>Sign up</h1>
+            <input type="text" placeholder="Enter Username" id='user'>
+            <input type="password" placeholder="Enter Password" id='pass'>
+            <input type="submit" value='Sign up'>
+            <br>
+            <h4 id='username'></h4>
+            <h4 id='password'></h4>
+        </div>
+    </form>
+
+
+    <div class='content-area'>
+        <p id='contnt'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illo sunt tenetur dolore accusantium dignissimos nesciunt eligendi quas. Quae error deleniti magnam fuga, culpa minima neque aspernatur illo inventore magni. <span onclick="DisplayAll()">read more</span></p>
+    </div>
+
+
+    <div class='signup'>
+        <h1>Enter Student Detail</h1>
+        <input type="text" placeholder="Enter Name" class='inpt'>
+        <input type="text" placeholder="Enter Your Class" class='inpt'>
+        <input type="text" placeholder="Enter Phone no." class='inpt'>
+        <input type="text" placeholder="Enter city" class='inpt'>
+        <button onclick='showDetail()'>Add detail</button>
+    </div>
+
+    <div id='tble'>
+        <table class="showData">
+            <thead>
+                <td><h3>Name</h3></td>
+                <td><h3>Class</h3></td>
+                <td><h3>Phone no.</h3></td>
+                <td><h3>City</h3></td>
+            </thead>
+
+        </table>
+    </div> 
+    
+    <div id='zoomit'>
+        <h1>Example Text</h1>
+        <p id='txtt'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur placeat provident porro illo minus pariatur vero eveniet, officia quam earum accusantium saepe, architecto quisquam magni enim non in beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores eveniet vitae saepe nisi earum accusamus ad magnam itaque quisquam aspernatur, tempora consectetur incidunt repellendus molestias laboriosam eos libero quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam similique asperiores provident quaerat ex reiciendis ratione natus debitis? Eos modi maxime sapiente commodi quos rerum optio error inventore sit.</p>
+        <i onclick='zoomIn(txtt)'>Zoom In</i>
+        <i onclick='zoomOut(txtt)'>Zoom Out</i>
+    </div>
+
+    <div><h1> DOM </h1><div id="form-content" class="content"><label for="first-name">First Name</label><input type="text" id="first-name"/><label for="last-name">Last Name</label><input type="text" id="last-name"/><label for="email">Email</label><input type="text" id="email"/></div><div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="render"> Email : alexbank@example.com</p><p class="render"> Country : Pakistan </p><p class="render"> contact : +92 300 1234567</p></div></div>
+    
+    
+
+        
+
+    <script src="app.js"></script>
+</body>
+</html>

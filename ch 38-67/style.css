@@ -1,0 +1,134 @@
+body {
+    background-color: azure;
+}
+.mob {
+    
+    display: inline-block;
+}
+.mob > h4 {
+    cursor: pointer;
+}
+.mob > h4:hover{
+    color:blue;
+}
+.main-div {
+    text-align: center;
+}
+
+.counter {
+    text-align: center;
+    margin-top: 50px;
+}
+.counter > *{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+}
+#num {
+    text-indent: 27px;
+}
+
+.signup {
+    margin: 20px auto;
+    text-align: center;
+    background-color:blue;
+    width: 250px;
+    height: 350px;
+    padding: 30px;
+    
+}
+.signup > input, .signup > button  {
+    display: block;
+    margin: 20px auto;
+    height: 25px;
+    font-size: 18px;
+    text-align: center;
+}
+
+h1{
+    color: darkturquoise;
+}
+
+content-area{
+    margin: 100px;
+
+}
+span{
+    color: blue;
+    cursor: pointer;
+}
+
+.showData {
+    margin: 10px auto;
+}
+
+td {
+    padding: 15px;
+}
+.tempInputField {
+    width: 60px;
+}
+
+.showData > tr > button {
+    margin: 10px;
+    
+}
+
+.img-box{
+    text-align: center;
+    
+}
+
+.img-box > img {
+    display: inline;
+   
+}
+
+.img-box > img:hover {
+    cursor: pointer;
+    box-shadow: 0 0 7px 0px blue;
+}
+
+#disply-img {
+    text-align: center;
+    background-color:lightgoldenrodyellow;
+    width: 100%;
+    height: 100vh !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 300px;
+    display: none;
+}
+#disply-img > img {
+    display: block;
+    margin: 10% auto;
+    width: 50%;
+    box-shadow: 0 0 9px 5px black;
+    border-radius: 3px;
+
+}
+#disply-img > span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color:black;
+}
+
+#zoomit {
+    text-align: center;
+    padding: 20px 10%;
+}
+
+i{
+    font-size: 25px;
+    font-weight: bold;
+}
+#zoomit > i {
+    margin: 15px;
+    cursor: pointer;
+    color: blue;
+}
+p{
+    font-size:15px;
+}
